@@ -30,6 +30,7 @@
     line-height: 1.8rem;
  }
 
+ /***** Header CSS *****/
  li, a, button{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -39,7 +40,6 @@
     text-decoration: none;
  }
 
-/***** Header CSS *****/
 ul{
    list-style: none;
 }
@@ -560,6 +560,17 @@ button:hover{
 .driver img, .steward img{
    box-shadow: none;
    border-radius: 0;
+}
+
+@keyframes animation{
+   from{
+       opacity: 0;
+       transform: translateY(15px);
+   }
+   to{
+       opacity: 1;
+       transform: translateY(0px);
+   }
 }
 
 @media (max-width: 1200px){
