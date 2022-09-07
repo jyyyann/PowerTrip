@@ -33,7 +33,7 @@
     padding-bottom: 2px;
  }
   
- p{
+ p, span, .text{
     font-family: 'Poppins', sans-serif;
     font-size: 1.0rem;
     line-height: 1.8rem;
@@ -140,7 +140,7 @@ button:hover{
  
 .left .content p{
    text-align: justify;
-   font-size: 1.1rem;
+   font-size: 1rem;
 }
 .left .content .social{
    margin: 20px 0 0 0;
@@ -342,7 +342,7 @@ button:hover{
    border-radius: 3rem 3rem 0 0;
 }
 
-.driver img{
+.driver img, .steward img{
    box-shadow: none;
    border-radius: 0;
 }
