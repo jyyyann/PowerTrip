@@ -17,6 +17,7 @@ html{
 
 body{
     overflow-x: hidden;
+    display: block;
 }
 
 a{
@@ -296,6 +297,8 @@ nav{
 /*Features*/
 .feature-banner{
     background-color: #f5f5f5;
+    max-width: 100%;
+    margin: auto;
  }
 
  .feature-content{
@@ -304,7 +307,12 @@ nav{
     display: flex;
     justify-content: space-between;
     background-size: cover;
-    width: 90%;
+    max-width: 90%;
+    overflow-x: hidden;
+ }
+
+ .feature-content .solutions{
+    padding: 15rem 0;
  }
  
  .flipped{
@@ -338,12 +346,16 @@ nav{
 
  .feature-demo{
    text-align: center;
-    padding: 10% 0;
+   display: flex;
+   justify-content: center;
  }
+
  .feature-demo img{
-     height: 35rem;
-     border-radius: 1.7rem;
-     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+   margin: auto;
+   display: block;
+   height: 35rem;
+   border-radius: 1.7rem;
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
  }
 
  /*driver 3 phone screens*/
@@ -354,12 +366,19 @@ nav{
 
  @media screen and (max-width: 1200px){
     .feature-content{
+       padding: 5rem 0;
         background-image: none;
         flex-direction: column;
         align-items: center;
         padding-bottom: 100px;
         display: table;
     }
+
+    .feature-demo img{
+      width: 100%;
+      height: auto;
+      margin: auto;
+   }
 
     .feature-des { display: table-header-group; } /*description always on bottom*/
     .feature-demo { display: table-footer-group; } /*image always on top*/
