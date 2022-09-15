@@ -321,7 +321,7 @@ nav{
  
  .feature-des{
     text-align: left;
-    padding: 8rem;
+    padding: 7rem;
  }
  
  .feature-des h3{
@@ -462,7 +462,7 @@ nav{
     color: #2eaeff;
  }
   
- .center .content .fas{
+ .center .content .fas, .fa-phone{
     font-size: 25px;
     height: 45px;
     width: 45px;
@@ -470,10 +470,6 @@ nav{
     text-align: center;
     cursor: pointer;
     color: white;
- }
-  
- .center .content .fas:hover{
-    color: #2eaeff;
  }
   
  .center .content .text{
