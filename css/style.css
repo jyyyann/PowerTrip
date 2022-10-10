@@ -316,20 +316,6 @@ header.sticky nav{
    font-weight: 500;
 }
 
-/*priv state page hero*/
-.hero.priv, .hero.contact{
-    height: 50vh;
-    background: none;
-    background-color: black;
-}
-
-.hero.priv h1, .hero.contact h1{
-    color: white;
-}
-
-.intro.priv, .intro.contact{
-    top: 40%;
-}
 
 @media screen and (max-width: 1200px){
     .intro{
@@ -498,6 +484,7 @@ header.sticky nav{
 
  /* priv statement */
  .priv-container{
+    padding-top: 10rem;
     width: 80%;
     margin: auto;
     margin-bottom: 10rem;
@@ -525,11 +512,11 @@ header.sticky nav{
  .contact-container{
      padding-top: 15rem;
      padding-bottom: 5rem;
-     width: 80%;
+     width: 70%;
      margin: auto;
      display: grid;
      column-gap: 20px;
-     grid-template-columns: 70% 30%;
+     grid-template-columns: 65% 35%;
  }
 
  .row{
@@ -554,13 +541,13 @@ header.sticky nav{
      border: none;
      margin-top: 3rem;
      font-size: 1.4rem;
-     width: 30rem;
+     width: 90%;
      height: 4rem;
      padding-left: 1rem;
  }
 
  .contact-container textarea{
-     width: 65.4rem;
+    width: 95%;
      height: 15rem;
      padding-top: 1rem;
      margin-bottom: 2rem;
@@ -606,6 +593,11 @@ header.sticky nav{
     transform: translate(0%, 0%);
 }
 
+.sidebar{
+    margin-left: auto; 
+    margin-right: 0;
+}
+
 .sidebar .row{
     display: grid;
     column-gap: 20px;
@@ -613,6 +605,28 @@ header.sticky nav{
     padding-top: 2rem;
 }
 
+@media screen and (max-width: 780px){
+    .contact-container{
+         flex-direction: column;
+         display: table;
+     }
+
+     .sidebar-content{
+        margin: auto;
+        width: fit-content;
+     }
+
+     .contact-container h1{
+            padding-top: 5rem;
+     }
+
+     .contact-container p{
+        line-height: 3rem;
+ }
+
+    .item.sidebar { display: table-header-group; } /*description always on top*/
+    .item.form { display: table-footer-group; } /*image always on bottom*/
+}
  /*contact page ends*/
 
 
