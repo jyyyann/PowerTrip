@@ -607,6 +607,7 @@ header.sticky nav{
 
 @media screen and (max-width: 780px){
     .contact-container{
+         padding-top: 5rem;
          flex-direction: column;
          display: table;
      }
@@ -616,16 +617,12 @@ header.sticky nav{
         width: fit-content;
      }
 
-     .contact-container h1{
-            padding-top: 5rem;
-     }
-
      .contact-container p{
         line-height: 3rem;
  }
 
-    .item.sidebar { display: table-header-group; } /*description always on top*/
-    .item.form { display: table-footer-group; } /*image always on bottom*/
+    .item.sidebar { display: table-footer-group; } /*description always on top*/
+    .item.form { display: table-header-group; } /*image always on bottom*/
 }
  /*contact page ends*/
 
