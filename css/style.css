@@ -207,6 +207,10 @@ header.sticky nav{
         color: white;
      }
 
+     header.sticky .dropdown-link > a{
+        background-color: none;
+     }
+
     .nav-list{
         position: fixed;
         top: 0;
