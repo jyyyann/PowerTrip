@@ -203,6 +203,10 @@ header.sticky nav{
  }
 
  @media screen and (max-width: 780px){
+    header.sticky a{
+        color: white;
+     }
+
     .nav-list{
         position: fixed;
         top: 0;
