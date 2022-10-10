@@ -317,17 +317,17 @@ header.sticky nav{
 }
 
 /*priv state page hero*/
-.hero.priv{
+.hero.priv, .hero.contact{
     height: 50vh;
     background: none;
     background-color: black;
 }
 
-.hero.priv h1{
+.hero.priv h1, .hero.contact h1{
     color: white;
 }
 
-.intro.priv{
+.intro.priv, .intro.contact{
     top: 40%;
 }
 
@@ -519,8 +519,107 @@ header.sticky nav{
     font-size: 1.8rem;
     line-height: 3rem;
  }
+
+
+ /*contact page starts*/
+ .contact-container{
+     padding-top: 15rem;
+     padding-bottom: 5rem;
+     width: 80%;
+     margin: auto;
+     display: grid;
+     column-gap: 20px;
+     grid-template-columns: 70% 30%;
+ }
+
+ .row{
+    display: grid;
+    grid-template-columns: 50% 50%;
+ }
+
+ .contact-container h1{
+     font-size: 3rem;
+     color: #2eaeff;
+ }
+
+ .contact-container p{
+    font-size: 1.5rem;
+    line-height: 5rem;
+    color: dimgrey;
+}
+
+ .contact-container input, .contact-container textarea{
+    font-family: 'Public Sans', sans-serif;
+     background-color: #f3f3f3;
+     border: none;
+     margin-top: 3rem;
+     font-size: 1.4rem;
+     width: 30rem;
+     height: 4rem;
+     padding-left: 1rem;
+ }
+
+ .contact-container textarea{
+     width: 65.4rem;
+     height: 15rem;
+     padding-top: 1rem;
+     margin-bottom: 2rem;
+ }
+
+ .item img{
+     width: 30rem;
+ }
+
+ .item.content{
+     padding-left: 10rem;
+ }
+
+ .circle{
+     border: solid 1px #2eaeff;
+     border-radius: 30px;
+     width: 50px;
+     height: 50px;
+     padding: 1px;
+ }
+
+ .circle i{
+     transform: translate(80%, 50%);
+ }
+
+ .circle .fas, .circle .fa-solid{
+     font-size: 2rem;
+     color: #2eaeff;
+ }
+
+ .circle .fas.fa-map-marker-alt{
+     position: absolute;
+    transform: translate(100%, 60%);
+ }
+
+.circle .fas.fa-envelope{
+    position: absolute;
+    transform: translate(65%, 60%);
+}
+
+.circle .fa-solid.fa-phone{
+    position: absolute;
+    transform: translate(0%, 0%);
+}
+
+.sidebar .row{
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 15% 85%;
+    padding-top: 2rem;
+}
+
+ /*contact page ends*/
+
+
+
  /* Footer */
  footer{
+    border-top: solid 5px #2eaeff;
     padding-top: 1.5rem;
     bottom: 0px;
     width: 100%;
@@ -630,7 +729,7 @@ header.sticky nav{
     padding-left: 10px;
     height: 35px;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Public Sans', sans-serif;
  }
   
  .right form input:focus,
@@ -653,7 +752,7 @@ header.sticky nav{
     font-size: 1.5rem;
     font-weight: 600;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Public Sans', sans-serif;
  }
   
  .right form .btn button:hover{
